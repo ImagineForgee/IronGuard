@@ -3,6 +3,12 @@ This README will describe the frontend Java application for IronGuard, detailing
 
 **IronGuard WebKit** is the Java-based frontend component of the IronGuard system, providing a web interface to manage, monitor, and interact with sub-servers. It communicates with the IronGuard Service and allows users to control the servers via a graphical interface.
 
+## IronGuard Service
+
+The **IronGuard Service** is the backend component that interacts with the frontend application. It provides the communication and server management functionality for IronGuard WebKit. The service uses WebSockets to allow real-time communication and metrics monitoring.
+
+For more information, you can check out the [IronGuard Service](https://github.com/ImagineForgee/IronGuard).
+
 ## Features
 
 - **Web Interface**: Provides an easy-to-use UI to interact with IronGuard Service.
