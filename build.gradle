@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.github.ImagineForgee.IronGuard'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
+        maven { setUrl("https://repo.spring.io/milestone") }
+        maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
+    }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
